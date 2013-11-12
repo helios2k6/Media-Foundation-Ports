@@ -2,3 +2,6 @@
 *.opensdf
 *.sdf
 *.vcxproj.user
+*.ipch
+ipch*
+x64*

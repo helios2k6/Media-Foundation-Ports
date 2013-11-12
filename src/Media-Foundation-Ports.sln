@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Core\Core.vcxproj", "{0387233A-F891-46D9-8950-6BDE91037B38}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "H264Decoder", "H264Decoder\H264Decoder.vcxproj", "{60AAE54F-0629-4F9E-9054-80AAB17B5CBE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0387233A-F891-46D9-8950-6BDE91037B38} = {0387233A-F891-46D9-8950-6BDE91037B38}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +24,12 @@ Global
 		{0387233A-F891-46D9-8950-6BDE91037B38}.Release|Win32.Build.0 = Release|x64
 		{0387233A-F891-46D9-8950-6BDE91037B38}.Release|x64.ActiveCfg = Release|x64
 		{0387233A-F891-46D9-8950-6BDE91037B38}.Release|x64.Build.0 = Release|x64
+		{60AAE54F-0629-4F9E-9054-80AAB17B5CBE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{60AAE54F-0629-4F9E-9054-80AAB17B5CBE}.Debug|Win32.Build.0 = Debug|Win32
+		{60AAE54F-0629-4F9E-9054-80AAB17B5CBE}.Debug|x64.ActiveCfg = Debug|Win32
+		{60AAE54F-0629-4F9E-9054-80AAB17B5CBE}.Release|Win32.ActiveCfg = Release|Win32
+		{60AAE54F-0629-4F9E-9054-80AAB17B5CBE}.Release|Win32.Build.0 = Release|Win32
+		{60AAE54F-0629-4F9E-9054-80AAB17B5CBE}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
