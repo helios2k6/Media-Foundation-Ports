@@ -27,6 +27,9 @@
     <ClInclude Include="CH264Decoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -38,5 +41,10 @@
     <ClCompile Include="CH264Decoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="H264Decoder.def">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
