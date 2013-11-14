@@ -1,5 +1,5 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
-#include "dllmain.h"
+#include "Dllmain.h"
 #include "DllUtils.h"
 
 // Handle to the DLL

@@ -18,5 +18,8 @@
     <ClInclude Include="StandardNotation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DllUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
