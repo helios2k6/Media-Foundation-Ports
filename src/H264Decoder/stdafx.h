@@ -13,10 +13,15 @@
 
 #define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS      // some CString constructors will be explicit
 
+/* ATL Headers */
 #include <atlbase.h>
 #include <atlstr.h>
 
+/* Annotation Headers */
 #include <sal.h>
+
+/* GUID initialization headers */
+#include <initguid.h>
 
 /* Module variables */
 extern ULONG g_dllLockCount;
