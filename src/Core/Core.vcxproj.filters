@@ -21,5 +21,13 @@
     <ClInclude Include="DllUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="immutable_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="immutable_string.inl">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

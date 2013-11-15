@@ -81,7 +81,7 @@ namespace DllUtils
 
 		WCHAR tempStr[MAX_PATH];
 
-		// Create a new registry key under "HKLM\\Software\\Classes\\CLSID\\" + CLSID_CImageInjectorMFT.
+		// Create a new registry key under "HKLM\\Software\\Classes\\CLSID\\" + CoClass ID.
 		hr = CreateRegKeyAndStringValue(
 			HKEY_LOCAL_MACHINE,               // start in HKLM
 			pszCOMKeyLocation,                // name + path of the key ("HKLM\\Software...")

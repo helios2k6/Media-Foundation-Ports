@@ -2,10 +2,15 @@
 #include "stdafx.h"
 #include "DllUtils.h"
 
-// Handle to the DLL
-HMODULE g_hModule = NULL;
-// module ref count
-ULONG g_dllLockCount = 0;
+/* Static const strings */
+#define DECODER_NAME L"Media Foundation Ports H264 Decoder"
+#define H264_DECODER_MFT_CLSID_STR L"Software\\Classes\\CLSID\\{EBFF9D67-D774-4500-B4AA-EE243925B3A5}"
+
+/* Handle to the DLL */
+static HMODULE g_hModule = NULL;
+
+/* Dll module ref count */
+static ULONG g_dllLockCount = 0;
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)
 {
@@ -44,7 +49,7 @@ STDAPI DllRegisterServer(void)
 
 	// Register the COM object CLSID so that CoCreateInstance() can be called to 
 	// instantiate the MFT object.
-	hr = DllUtils::RegisterCOMObject(g_hModule, H264_DECODER_MFT_CLSID_STR, L"Media Foundation Ports H264 Decoder");
+	hr = DllUtils::RegisterCOMObject(g_hModule, H264_DECODER_MFT_CLSID_STR, DECODER_NAME);
 
 	if (FAILED(hr))
 	{
@@ -54,14 +59,13 @@ STDAPI DllRegisterServer(void)
 	hr = MFTRegister(
 		CLSID_CH264DecoderMFT,
 		MFT_CATEGORY_VIDEO_DECODER,
-		L"Media Foundation Ports H264 Decoder",
+		DECODER_NAME,
 		MFT_ENUM_FLAG_ASYNCMFT,
 		0,
 		NULL,
 		0,
 		NULL,
 		NULL);
-		
 
 finished:
 	return hr;
