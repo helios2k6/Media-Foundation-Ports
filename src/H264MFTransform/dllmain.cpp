@@ -55,7 +55,7 @@ STDAPI DllRegisterServer(void)
 	{
 		goto finished;
 	}
-	
+
 	hr = MFTRegister(
 		CLSID_CH264DecoderMFT,
 		MFT_CATEGORY_VIDEO_DECODER,
