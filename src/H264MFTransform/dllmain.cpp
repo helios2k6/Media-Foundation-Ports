@@ -49,7 +49,7 @@ STDAPI DllRegisterServer(void)
 
 	// Register the COM object CLSID so that CoCreateInstance() can be called to 
 	// instantiate the MFT object.
-	hr = DllUtils::RegisterCOMObject(g_hModule, H264_DECODER_MFT_CLSID_STR, DECODER_NAME);
+	hr = NLogNEG::Dll::Utilities::RegisterCOMObject(g_hModule, H264_DECODER_MFT_CLSID_STR, DECODER_NAME);
 
 	if (FAILED(hr))
 	{
@@ -75,7 +75,7 @@ finished:
 STDAPI DllUnregisterServer(void)
 {
 	// Unregister the COM object itself
-	HRESULT hr = DllUtils::UnregisterObject(H264_DECODER_MFT_CLSID_STR);
+	HRESULT hr = NLogNEG::Dll::Utilities::UnregisterObject(H264_DECODER_MFT_CLSID_STR);
 
 	if (FAILED(hr))
 	{
