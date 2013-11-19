@@ -87,9 +87,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="DllUtils.h" />
+    <ClInclude Include="dll_utils.h" />
     <ClInclude Include="immutable_string.h" />
-    <ClInclude Include="StandardNotation.h" />
+    <ClInclude Include="standard_notation.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="immutable_string.inl" />

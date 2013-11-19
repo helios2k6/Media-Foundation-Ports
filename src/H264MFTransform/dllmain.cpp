@@ -1,6 +1,6 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "stdafx.h"
-#include "DllUtils.h"
+#include "dll_utils.h"
 
 /* Static const strings */
 #define DECODER_NAME L"Media Foundation Ports H264 Decoder"

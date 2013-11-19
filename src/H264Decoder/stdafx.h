@@ -20,14 +20,6 @@
 /* Annotation Headers */
 #include <sal.h>
 
-/* GUID initialization headers */
-#include <initguid.h>
-
-/* H264 decoder specific header files */
-#include <mfapi.h>
-#include <mftransform.h>
-#include <mfidl.h>
-#include <Mferror.h>
-
-// {EBFF9D67-D774-4500-B4AA-EE243925B3A5}
-DEFINE_GUID(CLSID_CH264DecoderMFT, 0xebff9d67, 0xd774, 0x4500, 0xb4, 0xaa, 0xee, 0x24, 0x39, 0x25, 0xb3, 0xa5);
+/* Application specific headers */
+#include "immutable_string.h"
+#include "standard_notation.h"

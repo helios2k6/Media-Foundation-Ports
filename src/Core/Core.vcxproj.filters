@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StandardNotation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DllUtils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="immutable_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dll_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="standard_notation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
